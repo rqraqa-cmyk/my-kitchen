@@ -1,0 +1,146 @@
+/* تنسيقات عامة للموقع */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* الهيدر (رأس الصفحة) */
+header {
+    background: #e67e22; /* لون برتقالي دافئ */
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #d35400 3px solid;
+}
+
+header h1 {
+    float: right;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+header nav {
+    float: left;
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+header nav a:hover {
+    color: #ffe0b2;
+}
+
+/* قسم الترحيب (Hero) */
+.hero {
+    text-align: center;
+    padding: 40px 0;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* شبكة الوصفات (Cards) */
+.recipes-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.card {
+    background: #fff;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* الأزرار */
+.btn {
+    background: #e67e22;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #d35400;
+}
+
+/* تنسيقات صفحة "اتصل بنا" والمربعات */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box; /* لضمان عدم خروج المربع عن الحواف */
+    display: block;
+}
+
+input:focus, textarea:focus {
+    border-color: #e67e22;
+    outline: none;
+    box-shadow: 0 0 5px rgba(230, 126, 34, 0.3);
+}
+
+/* الفوتر (أسفل الصفحة) */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
